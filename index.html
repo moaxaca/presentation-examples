@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <title>Bootstrap</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      background-color: #465F9D !important;
+      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      color: white;
+    }
+
+    #title {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      height: 30px;
+    }
+
+    img {
+      max-width: 200px;
+      position: absolute;
+    }
+
+    #laserCats, #wallCat, #trex {
+      bottom: -300px;
+    }
+
+    #wallCat {
+      left: -300px;
+    }
+
+    #laserCats {
+      right: -300px;
+    }
+
+    #trex {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-<h2>Welcome to the ES2016 Browserify Example!</h2>
+<div class="container">
+  <h2 id="title">Welcome to the ES2016 Browserify Example!</h2>
+  <img id="wallCat" src="http://farm5.static.flickr.com/4004/4497148922_434bcf6ea8_o.png" >
+  <img id="laserCats" src="https://blanksurvivinglawschool.files.wordpress.com/2010/06/laser-cat.jpg">
+  <img id="trex" src="https://s-media-cache-ak0.pinimg.com/736x/ba/6f/13/ba6f13ff0b2093576ca70e1eb44d4006.jpg">
+</div>
 <script src="dist/app.js"></script>
 </body>
 </html>
